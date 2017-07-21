@@ -23,6 +23,10 @@ kaitai-struct-compiler@^0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/kaitai-struct-compiler/-/kaitai-struct-compiler-0.7.1.tgz#6f527beec86e05301394a425d7de7e0c84c03e4f"
 
+kaitai-struct@^0.8.0-SNAPSHOT.2:
+  version "0.8.0-SNAPSHOT.2"
+  resolved "https://registry.yarnpkg.com/kaitai-struct/-/kaitai-struct-0.8.0-SNAPSHOT.2.tgz#225a2618349437653897a13e06e683078cd70c2d"
+
 sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"

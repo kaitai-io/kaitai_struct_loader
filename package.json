@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "js-yaml": "^3.9.0",
+    "kaitai-struct": "^0.8.0-SNAPSHOT.2",
     "kaitai-struct-compiler": "^0.7.1"
   }
 }
