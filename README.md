@@ -15,7 +15,7 @@ file.js
 import KaitaiStream form 'kaitai-struct/KaitaiStream';
 import DoomWAD from './game/doom_wad.ksy';
 
-const stream = new KaitaiStream(arrayBuffer, 0);
+const stream = new KaitaiStream(arrayBuffer);
 const data = new DoomWAD(stream);
 ```
 *A specification of the Doom wad format can be found at the [format gallery](http://formats.kaitai.io/doom_wad/index.html).*
