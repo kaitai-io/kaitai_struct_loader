@@ -1,5 +1,5 @@
 # Kaitai-Struct loader for webpack
-This loader adds support for kaitai-struct .ksy definitions
+This loader adds support for [kaitai-struct](https://kaitai.io) .ksy definitions
 
 ## Installation (not published yet)
 
@@ -13,10 +13,12 @@ file.js
 
 ```js
 import KaitaiStream form 'kaitai-struct/KaitaiStream';
-import DoomData from './game/doom_wad.ksy';
+import DoomWAD from './game/doom_wad.ksy';
 
-const data = new DoomData(new KaitaiStream(arrayBuffer, 0));
+const stream = new KaitaiStream(arrayBuffer, 0);
+const data = new DoomWAD(stream);
 ```
+*A specification of the Doom wad format can be found at the [format gallery](http://formats.kaitai.io/doom_wad/index.html).*
 
 webpack.config.js
 ```js
