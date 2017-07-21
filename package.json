@@ -1,6 +1,6 @@
 {
   "name": "kaitai-struct-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "license": "MIT",
   "author": "Kaitai team (https://github.com/orgs/kaitai-io/people)",
