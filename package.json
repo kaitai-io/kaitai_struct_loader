@@ -1,9 +1,11 @@
 {
   "name": "kaitai-struct-loader",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "Christoph Leimbrock <christoph.leimbrock@gmx.de>",
   "license": "MIT",
   "dependencies": {
+    "js-yaml": "^3.9.0",
+    "kaitai-struct-compiler": "^0.7.1"
   }
 }
