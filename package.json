@@ -12,9 +12,13 @@
     "webpack",
     "loader"
   ],
+  "bugs": {
+    "url": "https://github.com/kaitai-io/kaitai-struct-loader/issues"
+  },
+  "homepage": "https://github.com/kaitai-io/kaitai-struct-loader#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:kaitai-io/kaitai-struct-loader.git"
+    "url": "git+https://github.com:kaitai-io/kaitai-struct-loader.git"
   },
   "dependencies": {
     "js-yaml": "^3.9.0",
