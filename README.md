@@ -1,7 +1,7 @@
 # Kaitai-Struct loader for webpack
 This loader adds support for kaitai-struct .ksy definitions
 
-## Installation
+## Installation (not published yet)
 
 ```sh
 yarn add --dev kaitai-struct-loader
