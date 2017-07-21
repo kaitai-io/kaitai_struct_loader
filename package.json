@@ -2,8 +2,20 @@
   "name": "kaitai-struct-loader",
   "version": "0.1.0",
   "main": "index.js",
-  "author": "Christoph Leimbrock <christoph.leimbrock@gmx.de>",
   "license": "MIT",
+  "author": "Kaitai team (https://github.com/orgs/kaitai-io/people)",
+  "keywords": [
+    "kaitai",
+    "binary",
+    "parsing",
+    "struct",
+    "webpack",
+    "loader"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kaitai-io/kaitai-struct-loader.git"
+  },
   "dependencies": {
     "js-yaml": "^3.9.0",
     "kaitai-struct": "^0.8.0-SNAPSHOT.2",
