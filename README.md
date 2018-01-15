@@ -33,3 +33,8 @@ module.exports = {
   }
 }
 ```
+
+## Options
+|Name|Type|Default|Description|
+|:--:|:--:|:-----:|:----------|
+|**`debug`**|`{Boolean}`|`false`|Switch loader to debug mode|
