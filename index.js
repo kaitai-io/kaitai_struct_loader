@@ -3,7 +3,7 @@ var loaderUtils = require("loader-utils");
 var yaml = require('js-yaml');
 
 module.exports = function (source) {
-	const options = loaderUtils.getOptions(this);
+	const options = loaderUtils.getOptions(this) || {};
 	const debug = options.hasOwnProperty('debug') ? options.debug : this.debug;
 	
 	if (this.cacheable) this.cacheable();
