@@ -18,10 +18,8 @@ module.exports = function (source) {
 	}
 
 	var compiler = new KaitaiStructCompiler();
-	var kaitaiImport = 'var KaitaiStream = require("kaitai-struct/KaitaiStream")\n';
-
 	compiler.compile("javascript", structure, null, debug).then(function (code) {
-		callback(null, kaitaiImport + Object.values(code).join('\n'), null);
+		callback(null, Object.values(code).join('\n'), null);
 	}).catch(function (error) {
 		callback(new Error(error), null);
 	});
