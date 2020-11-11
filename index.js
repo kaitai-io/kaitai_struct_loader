@@ -1,6 +1,8 @@
 var KaitaiStructCompiler = require("kaitai-struct-compiler");
 var loaderUtils = require("loader-utils");
 var yaml = require('js-yaml');
+var path = require('path');
+var fs = require('fs');
 
 module.exports = function (source) {
 	const options = loaderUtils.getOptions(this) || {};
@@ -17,8 +19,18 @@ module.exports = function (source) {
 		return;
 	}
 
+	const context = this.context;
+
+    var yamlImporter = {
+        importYaml: function(name, mode) {
+            return Promise.resolve(
+				yaml.safeLoad(fs.readFileSync(path.join(context, name + ".ksy"), "utf8"))
+			);
+        }
+    };
+
 	var compiler = new KaitaiStructCompiler();
-	compiler.compile("javascript", structure, null, debug).then(function (code) {
+	compiler.compile("javascript", structure, yamlImporter, debug).then(function (code) {
 		callback(null, Object.values(code).join('\n'), null);
 	}).catch(function (error) {
 		callback(new Error(error), null);
