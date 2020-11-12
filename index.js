@@ -21,13 +21,13 @@ module.exports = function (source) {
 
 	const context = this.context;
 
-    var yamlImporter = {
-        importYaml: function(name, mode) {
-            return Promise.resolve(
+	var yamlImporter = {
+		importYaml: function(name, mode) {
+			return Promise.resolve(
 				yaml.safeLoad(fs.readFileSync(path.join(context, name + ".ksy"), "utf8"))
 			);
-        }
-    };
+		}
+	};
 
 	var compiler = new KaitaiStructCompiler();
 	compiler.compile("javascript", structure, yamlImporter, debug).then(function (code) {
