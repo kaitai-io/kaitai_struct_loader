@@ -4,8 +4,8 @@ var yaml = require('js-yaml');
 var path = require('path');
 var fs = require('fs');
 
-// Please note, that this function is called from webpack, and 'this' will
-// refer to https://webpack.js.org/api/loaders/#the-loader-context
+// this function is called from webpack and 'this' refers
+// to https://webpack.js.org/api/loaders/#the-loader-context
 module.exports = function (source) {
 	const options = loaderUtils.getOptions(this) || {};
 	const debug = options.hasOwnProperty('debug') ? options.debug : this.debug;
