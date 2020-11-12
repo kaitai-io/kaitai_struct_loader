@@ -21,7 +21,7 @@ module.exports = function (source) {
 		return;
 	}
 
-	const context = this.context;
+	const moduleDir = this.context;
 
 	var yamlImporter = {
 		importYaml: function(name, mode) {
