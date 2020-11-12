@@ -25,9 +25,10 @@ module.exports = function (source) {
 
 	var yamlImporter = {
 		importYaml: function(name, mode) {
-			return Promise.resolve(
-				yaml.safeLoad(fs.readFileSync(path.join(context, name + ".ksy"), "utf8"))
-			);
+			const filePath = path.join(context, name + ".ksy");
+			const ksyStr = fs.readFileSync(filePath, "utf8");
+			const ksyObj = yaml.safeLoad(ksyStr);
+			return Promise.resolve(ksyObj);
 		}
 	};
 
