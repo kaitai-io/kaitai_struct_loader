@@ -19,13 +19,15 @@ js-yaml@^3.9.0:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-kaitai-struct-compiler@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/kaitai-struct-compiler/-/kaitai-struct-compiler-0.7.1.tgz#6f527beec86e05301394a425d7de7e0c84c03e4f"
+kaitai-struct-compiler@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/kaitai-struct-compiler/-/kaitai-struct-compiler-0.9.0.tgz#90ff9cd0f0ea0ec4f8532de2ca1e2439df6999be"
+  integrity sha512-KA1rRv6FjUl/J8UfLhpvgtG3UGx6mDh6/Q1uC+/CSr3RsK4ejvDehY59DjQSNF3iNtzHo6kvptoa9XmUD3gIrg==
 
-kaitai-struct@^0.8.0-SNAPSHOT.2:
-  version "0.8.0-SNAPSHOT.2"
-  resolved "https://registry.yarnpkg.com/kaitai-struct/-/kaitai-struct-0.8.0-SNAPSHOT.2.tgz#225a2618349437653897a13e06e683078cd70c2d"
+kaitai-struct@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/kaitai-struct/-/kaitai-struct-0.9.0.tgz#07264320f7aa4fa4c9d6b261495f483ab1af569b"
+  integrity sha512-mfoBu9+IGqaY3ykG1TyAy9omOAZWtheqESQOvo/HKIQVTz+gRPVCNBnhjbO+8wAQ77RD33wYvLBWmITuXIviQg==
 
 sprintf-js@~1.0.2:
   version "1.0.3"

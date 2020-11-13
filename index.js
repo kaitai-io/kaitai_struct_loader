@@ -1,7 +1,11 @@
 var KaitaiStructCompiler = require("kaitai-struct-compiler");
 var loaderUtils = require("loader-utils");
 var yaml = require('js-yaml');
+var path = require('path');
+var fs = require('fs');
 
+// this function is called from webpack and 'this' refers
+// to https://webpack.js.org/api/loaders/#the-loader-context
 module.exports = function (source) {
 	const options = loaderUtils.getOptions(this) || {};
 	const debug = options.hasOwnProperty('debug') ? options.debug : this.debug;
@@ -17,11 +21,20 @@ module.exports = function (source) {
 		return;
 	}
 
-	var compiler = new KaitaiStructCompiler();
-	var kaitaiImport = 'var KaitaiStream = require("kaitai-struct/KaitaiStream")\n';
+	const moduleDir = this.context;
 
-	compiler.compile("javascript", structure, null, debug).then(function (code) {
-		callback(null, kaitaiImport + Object.values(code).join('\n'), null);
+	var yamlImporter = {
+		importYaml: function(name, mode) {
+			const filePath = path.join(moduleDir, name + ".ksy");
+			const ksyStr = fs.readFileSync(filePath, "utf8");
+			const ksyObj = yaml.safeLoad(ksyStr);
+			return Promise.resolve(ksyObj);
+		}
+	};
+
+	var compiler = new KaitaiStructCompiler();
+	compiler.compile("javascript", structure, yamlImporter, debug).then(function (code) {
+		callback(null, Object.values(code).join('\n'), null);
 	}).catch(function (error) {
 		callback(new Error(error), null);
 	});
