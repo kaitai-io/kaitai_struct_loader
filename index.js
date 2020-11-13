@@ -25,7 +25,7 @@ module.exports = function (source) {
 
 	var yamlImporter = {
 		importYaml: function(name, mode) {
-			const filePath = path.join(context, name + ".ksy");
+			const filePath = path.join(moduleDir, name + ".ksy");
 			const ksyStr = fs.readFileSync(filePath, "utf8");
 			const ksyObj = yaml.safeLoad(ksyStr);
 			return Promise.resolve(ksyObj);
