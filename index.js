@@ -9,7 +9,7 @@ var fs = require('fs');
 module.exports = function (source) {
 	const options = loaderUtils.getOptions(this) || {};
 	const debug = options.hasOwnProperty('debug') ? options.debug : this.debug;
-	
+
 	if (this.cacheable) this.cacheable();
 	var callback = this.async();
 
