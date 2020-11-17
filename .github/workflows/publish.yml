@@ -14,6 +14,16 @@ jobs:
         with:
           node-version: 14.x
           registry-url: https://registry.npmjs.org/
+      - name: Get version from package.json
+        run: PACKAGE_JSON_VER=$(node -p "require('./package.json').version")
+      - name: Make sure the versions match
+        run: |
+          [[ $PACKAGE_JSON_VER == "${GITHUB_REF#refs/tags/v*}" ]] \
+            && echo "Success: versions match" \
+            || {
+              echo "Error: versions do not match ('$PACKAGE_JSON_VER' in package.json, Git tag '${GITHUB_REF#refs/tags/*}')"
+              exit 1
+            }
       - run: yarn install --frozen-lockfile
       - run: yarn publish
         env:
