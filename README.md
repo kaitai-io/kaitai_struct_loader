@@ -28,8 +28,11 @@ module.exports = {
     rules: [
       {
         test: /\.ksy$/,
-        loader: 'kaitai-struct-loader'
-      }
+        use: [{
+          loader: 'kaitai-struct-loader',
+          // options: { debug: true },
+        }],
+      },
     ]
   }
 }
