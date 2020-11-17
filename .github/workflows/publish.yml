@@ -15,8 +15,13 @@ jobs:
           node-version: 14.x
           registry-url: https://registry.npmjs.org/
       - name: Get version from package.json
-        run: PACKAGE_JSON_VER=$(node -p "require('./package.json').version")
+        id: get_package_json_ver
+        run: |
+          v=$(node -p "require('./package.json').version")
+          echo "::set-output name=v::$v"
       - name: Make sure the versions match
+        env:
+          PACKAGE_JSON_VER: ${{ steps.get_package_json_ver.outputs.v }}
         run: |
           [[ $PACKAGE_JSON_VER == "${GITHUB_REF#refs/tags/v*}" ]] \
             && echo "Success: versions match" \
