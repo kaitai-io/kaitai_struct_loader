@@ -1,4 +1,7 @@
 # Kaitai Struct loader for webpack
+
+[![npm version](https://badge.fury.io/js/kaitai-struct-loader.svg)](https://badge.fury.io/js/kaitai-struct-loader)
+
 This [webpack loader](https://webpack.js.org/concepts/loaders/) adds support for [Kaitai Struct](https://kaitai.io) .ksy definitions.
 
 ## Installation
