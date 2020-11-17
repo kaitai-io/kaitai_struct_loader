@@ -1,5 +1,5 @@
 # Kaitai Struct loader for webpack
-This loader adds support for [Kaitai Struct](https://kaitai.io) .ksy definitions.
+This [webpack loader](https://webpack.js.org/concepts/loaders/) adds support for [Kaitai Struct](https://kaitai.io) .ksy definitions.
 
 ## Installation
 
