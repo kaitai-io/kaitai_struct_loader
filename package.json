@@ -1,9 +1,6 @@
 {
   "name": "kaitai-struct-loader",
   "version": "0.9.0",
-  "main": "index.js",
-  "license": "MIT",
-  "author": "Kaitai team (https://github.com/orgs/kaitai-io/people)",
   "keywords": [
     "kaitai",
     "binary",
@@ -12,14 +9,17 @@
     "webpack",
     "loader"
   ],
+  "homepage": "https://github.com/kaitai-io/kaitai-struct-loader#readme",
   "bugs": {
     "url": "https://github.com/kaitai-io/kaitai-struct-loader/issues"
   },
-  "homepage": "https://github.com/kaitai-io/kaitai-struct-loader#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com:kaitai-io/kaitai-struct-loader.git"
   },
+  "license": "MIT",
+  "author": "Kaitai team (https://github.com/orgs/kaitai-io/people)",
+  "main": "index.js",
   "dependencies": {
     "js-yaml": "^3.13.1",
     "kaitai-struct": "^0.9.0",
