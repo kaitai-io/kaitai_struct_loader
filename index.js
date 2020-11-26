@@ -1,3 +1,5 @@
+'use strict';
+
 var KaitaiStructCompiler = require("kaitai-struct-compiler");
 var loaderUtils = require("loader-utils");
 var yaml = require('js-yaml');
@@ -24,8 +26,10 @@ module.exports = function (source) {
 	const moduleDir = this.context;
 
 	var yamlImporter = {
-		importYaml: function(name, mode) {
+		importYaml: (name, mode) => {
 			const filePath = path.join(moduleDir, name + ".ksy");
+			this.addDependency(filePath);
+
 			const ksyStr = fs.readFileSync(filePath, "utf8");
 			const ksyObj = yaml.safeLoad(ksyStr);
 			return Promise.resolve(ksyObj);
