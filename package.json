@@ -32,7 +32,7 @@
   "devDependencies": {
     "eval": "^0.1.4",
     "memfs": "^3.2.0",
-    "mocha": "^5.2.0",
+    "mocha": "^8.4.0",
     "webpack": "^3.12.0"
   }
 }
