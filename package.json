@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "eval": "^0.1.6",
-    "memfs": "^3.3.0",
+    "memfs": "^3.4.0",
     "mocha": "^5.2.0",
     "webpack": "^3.12.0"
   }
