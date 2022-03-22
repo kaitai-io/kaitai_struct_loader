@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@types/node@*":
+  version "17.0.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.22.tgz#38b6c4b9b2f3ed9f2e376cce42a298fb2375251e"
+  integrity sha512-8FwbVoG4fy+ykY86XCAclKZDORttqE5/s7dyWZKLXTdv3vRy5HozBEinG5IqhvPXXzIZEcTVbuHlQEI6iuwcmw==
+
 acorn-dynamic-import@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/acorn-dynamic-import/-/acorn-dynamic-import-2.0.2.tgz#c752bd210bef679501b6c6cb7fc84f8f47158cc4"
@@ -747,11 +752,12 @@ estraverse@^5.2.0:
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-5.2.0.tgz#307df42547e6cc7324d3cf03c155d5cdb8c53880"
   integrity sha512-BxbNGGNm0RyRYvUdHpIwv9IWzeM9XClbOxwoATuFdOE7ZE6wHL+HQ5T8hoPM+zHvmKzzsEqhgy0GrQ5X13afiQ==
 
-eval@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/eval/-/eval-0.1.6.tgz#9620d7d8c85515e97e6b47c5814f46ae381cb3cc"
-  integrity sha512-o0XUw+5OGkXw4pJZzQoXUk+H87DHuC+7ZE//oSrRGtatTmr12oTnLfg6QOq9DyTt0c/p4TwzgmkKrBzWTSizyQ==
+eval@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/eval/-/eval-0.1.7.tgz#106f75f9d6feb10a68adeaf97a43a582c58e0b2f"
+  integrity sha512-ju9MU0XxhlibL4H5Ln8jCPJONGOS7unrBY+x1ICub09Ohg0tWTcBVkqgbJpRmczNobY8RxqCdar7hkdg5msVCA==
   dependencies:
+    "@types/node" "*"
     require-like ">= 0.1.1"
 
 event-emitter@~0.3.5:
