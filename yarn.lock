@@ -752,10 +752,10 @@ estraverse@^5.2.0:
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-5.2.0.tgz#307df42547e6cc7324d3cf03c155d5cdb8c53880"
   integrity sha512-BxbNGGNm0RyRYvUdHpIwv9IWzeM9XClbOxwoATuFdOE7ZE6wHL+HQ5T8hoPM+zHvmKzzsEqhgy0GrQ5X13afiQ==
 
-eval@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/eval/-/eval-0.1.7.tgz#106f75f9d6feb10a68adeaf97a43a582c58e0b2f"
-  integrity sha512-ju9MU0XxhlibL4H5Ln8jCPJONGOS7unrBY+x1ICub09Ohg0tWTcBVkqgbJpRmczNobY8RxqCdar7hkdg5msVCA==
+eval@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/eval/-/eval-0.1.8.tgz#2b903473b8cc1d1989b83a1e7923f883eb357f85"
+  integrity sha512-EzV94NYKoO09GLXGjXj9JIlXijVck4ONSr5wiCWDvhsvj5jxSrzTmRU/9C1DyB6uToszLs8aifA6NQ7lEQdvFw==
   dependencies:
     "@types/node" "*"
     require-like ">= 0.1.1"
