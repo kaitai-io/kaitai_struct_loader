@@ -1302,10 +1302,10 @@ json5@^1.0.1:
   dependencies:
     minimist "^1.2.0"
 
-kaitai-struct-compiler@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/kaitai-struct-compiler/-/kaitai-struct-compiler-0.9.0.tgz#90ff9cd0f0ea0ec4f8532de2ca1e2439df6999be"
-  integrity sha512-KA1rRv6FjUl/J8UfLhpvgtG3UGx6mDh6/Q1uC+/CSr3RsK4ejvDehY59DjQSNF3iNtzHo6kvptoa9XmUD3gIrg==
+kaitai-struct-compiler@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/kaitai-struct-compiler/-/kaitai-struct-compiler-0.10.0.tgz#2a8861d8e6eaf18446b078531fc04d5a6bdce5fa"
+  integrity sha512-zIIGUn6X3UQJ05mwkZ0QUbLTdq9Oopyl9EPSoQHiSpnHFfuQHCphj+doLm6oXD/ouUXpPC860185dGCCzNVi2A==
 
 kaitai-struct@^0.9.0:
   version "0.9.0"
