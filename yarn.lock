@@ -1307,10 +1307,10 @@ kaitai-struct-compiler@^0.9.0:
   resolved "https://registry.yarnpkg.com/kaitai-struct-compiler/-/kaitai-struct-compiler-0.9.0.tgz#90ff9cd0f0ea0ec4f8532de2ca1e2439df6999be"
   integrity sha512-KA1rRv6FjUl/J8UfLhpvgtG3UGx6mDh6/Q1uC+/CSr3RsK4ejvDehY59DjQSNF3iNtzHo6kvptoa9XmUD3gIrg==
 
-kaitai-struct@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/kaitai-struct/-/kaitai-struct-0.9.0.tgz#07264320f7aa4fa4c9d6b261495f483ab1af569b"
-  integrity sha512-mfoBu9+IGqaY3ykG1TyAy9omOAZWtheqESQOvo/HKIQVTz+gRPVCNBnhjbO+8wAQ77RD33wYvLBWmITuXIviQg==
+kaitai-struct@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/kaitai-struct/-/kaitai-struct-0.10.0.tgz#f0619a056ee4420387d821175ca0a92d3761f712"
+  integrity sha512-81oxVi/OY+LrzgrONX7ciD1wtvq24nb2M9iYixRiQG+1hrDrDRqFVWuQzF1fUexh3Sg/ol6eMAz1MOVYFouzUg==
 
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"
